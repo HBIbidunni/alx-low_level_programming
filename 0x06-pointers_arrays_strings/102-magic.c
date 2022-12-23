@@ -1,9 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - 102 magic
+ * Return: Always success
+ */
 int main(void)
-
 {
-
 	int n;
 
 	int a[5];
@@ -15,8 +16,9 @@ int main(void)
 	p = &n;
 
 	/*
-	 *  write your line of code here...
+	 * write your line of code here...
 	 * Remember:
+	 * main - magic
 	 * - you are not allowed to use a
 	 * - you are not allowed to modify p
 	 * - only one statement
@@ -32,5 +34,3 @@ int main(void)
 	return (0);
 
 }
-
-
