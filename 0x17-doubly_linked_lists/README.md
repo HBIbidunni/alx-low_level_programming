@@ -14,7 +14,7 @@
            
             ``node* next;``
            
-            ``node* prev;``
+              node* prev;
       
       ``};``
 
