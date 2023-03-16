@@ -7,11 +7,12 @@
 * For instance in the doubly linked lists, nodes are defined as:
         
         ``struct node`` 
-
-     ``{``
-           ``int data;``
+     
+        ``{``
+         
+            ``int data;``
            
-           ``node* next;``
+            ``node* next;``
            
             ``node* prev;``
       
