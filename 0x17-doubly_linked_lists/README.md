@@ -6,12 +6,15 @@
 * It is very similar to the singly linked lists; the big difference is how the nodes are defined.
 * For instance in the doubly linked lists, nodes are defined as:
         
-        `struct node` 
+        ``struct node`` 
 
-{
-          int data;
-          node* next;
-          node* prev;
-};
+     ``{``
+           ``int data;``
+           
+           ``node* next;``
+           
+            ``node* prev;``
+      
+      ``};``
 
 For this project, I am required to input the Prototypes of all my functions in the header file ``lists.h``
