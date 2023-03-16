@@ -18,4 +18,4 @@
       
          };
 
-For this project, I am required to input the Prototypes of all my functions in the header file ``lists.h``
+For this project, I am required to input the Prototypes of all my functions in the header file ``lists.h``. Please have a look at my codes above, I am very open to suggestions and comments.
