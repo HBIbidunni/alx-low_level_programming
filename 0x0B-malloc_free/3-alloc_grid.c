@@ -1,43 +1,47 @@
 #include "main.h"
-/**
- * alloc_grid - allocates a grid, make space and free space
- * @width: takes in width of grid
- * @height: height of grid
- * Return: grid with freed spaces
- */
+#include <stdlib.h>
 
+/**
+ * alloc_grid - Returns a pointer to a 2-dimensional array of
+ *               integers with each element initalized to 0.
+ * @width: The width of the 2-dimensional array.
+ * @height: The height of the 2-dimensional array.
+ *
+ * Return: If width <= 0, height <= 0, or the function fails - NULL.
+ *         Otherwise - a pointer to the 2-dimensional array of integers.
+ */
 int **alloc_grid(int width, int height)
 {
-/*Declaring variables*/
-int **grid;
-int i, j;
+	int **array2D;
+	int hgt_index, wid_index;
 
-if (width <= 0 || height <= 0)
-{
-return (NULL);
-}
+	if (width <= 0 || height <= 0)
+		return (NULL);
 
-grid = malloc(sizeof(int *) * height); /*malloc*/
+	array2D = malloc(sizeof(int *) * height);
 
-if (grid == NULL)
-{
-return (NULL);
-}
+	if (array2D == NULL)
+		return (NULL);
 
-for (i = 0; i < height; i++)
-{
-grid[i] = malloc(sizeof(int) * width);
-if (grid[i] == NULL)
-{
-for (i = i - 1; i >= 0; i--)
-{
-free(grid[i]);
-}
-free(grid);
-return (NULL);
-}
-}
-for (i = 0; j < width; j++)
-grid[i][j] = 0;
-return (grid);
+	for (hgt_index = 0; hgt_index < height; hgt_index++)
+	{
+		array2D[hgt_index] = malloc(sizeof(int) * width);
+
+		if (array2D[hgt_index] == NULL)
+		{
+			for (; hgt_index >= 0; hgt_index--)
+				free(array2D[hgt_index]);
+
+			free(array2D);
+			return (NULL);
+		}
+	}
+
+	for (hgt_index = 0; hgt_index < height; hgt_index++)
+	{
+		for (wid_index = 0; wid_index < width; wid_index++)
+			array2D[hgt_index][wid_index] = 0;
+	}
+
+	return (array2D);
 }
