@@ -1,13 +1,13 @@
 # The ALX project solutions to: 0x1A. C - Hash tables
 --------
 
-> For this project, my key learnings are implementing the hash functions and hash tables in `C`.
+> <b>For this project, my key learnings are implementing the hash functions and hash tables in `C`.</b>
 
 
-> The prototypes of all functions used in the project are contained in the  header file called [hash_tables.h](./hash_tables.h)
+> <b>The prototypes of all functions used in the project are contained in the  header file called</b> [hash_tables.h](./hash_tables.h)
 
 
-> Similarly, the following data structures are used in the project:
+> <b>Similarly, the following data structures are used in the project:</b>
                 
                 
                 /**
@@ -40,4 +40,4 @@
                 } hash_table_t;
 
 
-> All feedbacks, comments and suggestions are highly welcome. Please take a look at my codes.
+> <b>All feedbacks, comments and suggestions are highly welcome. Please take a look at my codes.</b>
