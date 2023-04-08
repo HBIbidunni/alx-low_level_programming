@@ -8,6 +8,8 @@
 
 
 > Similarly, the following data structures are used in the project:
+                
+                
                 /**
                  * struct hash_node_s - Node of a hash table
                  *
@@ -22,7 +24,7 @@
                      char *value;
                      struct hash_node_s *next;
                 } hash_node_t;
-
+                
                 /**
                  * struct hash_table_s - Hash table data structure
                  *
